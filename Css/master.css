@@ -1,0 +1,884 @@
+/* Start Global Rules */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+:root {
+    --main-color: #FB6356;
+    --main-transtion: 0.6s;
+    --section-padding-top: 100px;
+    --section-padding-bottom:100px
+}
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* small */
+@media (min-width: 768px) {
+    .continar {
+        width: 750px;
+    }
+}
+
+/* medium */
+
+@media (min-width: 992px) {
+    .continar {
+        width: 970px;
+    }
+}
+
+/* larg */
+
+@media (min-width: 1200px) {
+    .continar {
+        width: 1170px;
+    }
+}
+.continar {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* End Global Rules */
+
+/* Start Header */
+.header {
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.header .continar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.headr .continar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .header .continar .logo {
+        width: 100%;  
+        padding-top: 20px;
+    }
+}
+.header .continar .links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .continar .links li {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: var(--main-transtion);
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header .continar .links li {
+        padding: 15px;
+    }
+    .header .continar .links li:nth-child(5) {
+        display: none;
+    }
+    .header .continar .links li:nth-child(6) {
+        display: none;
+    }
+}
+.header .continar .links li:first-child {
+    color: var(--main-color);
+}
+.header .continar .links li:hover {
+    color: var(--main-color);
+}
+/* End Header */
+
+/* Start Landing */
+.landing .holder {
+    display: flex;
+}
+@media (max-width: 992px) {
+    .landing .holder {
+        flex-direction: column;
+    }
+}
+.landing .holder .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/top-left-bg.jpg);
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+@media (min-width: 992px) {
+    .landing .holder .text {
+        width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .landing .holder .text {
+        padding: 20px 0 20px;
+    }
+}
+.landing .holder .text img {
+    max-width: 100%;
+    margin-top: 120px;
+}
+.landing .holder .text h4 {
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.landing .holder .text p {
+    color: var(--main-color);
+    background-color: white;
+    padding: 15px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--main-transtion);
+}
+.landing .holder .text p:hover {
+    background-color: whitesmoke;
+}
+.landing .holder .image img {
+    width: 100%;
+    height: 100%;
+}
+/* End Landing */
+
+/* Start About Us */
+.about-us{
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+}
+.about-us .continar {
+    display: flex;
+    gap: 50px;
+}
+@media (max-width: 992px) {
+    .about-us .continar {
+        flex-direction: column;
+    }
+}
+@media (min-width: 992px) {
+    .about-us .continar .text {
+        width: 50%;
+    }
+}
+.about-us .continar .text h5 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.about-us .continar .text h1 {
+    color: #2A2A2A;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+.about-us .continar .text p {
+    line-height: 1.7;
+    color: #333;
+    font-size: 15px;
+}
+.about-us .continar .text .images {
+    padding-top: 20px;
+}
+.about-us .continar .text .images img{
+    max-width: 100%;
+    padding-left: 5px;
+}
+.about-us .continar .main-image img {
+    max-width: 100%;
+    height: 100%;
+}
+/* End About Us */
+
+/* Start Menu */
+.menu {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+    background-color: #FFFAFA;
+    position: relative;
+}
+.menu .continar h5 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.menu .continar h1 {
+    color: #2A2A2A;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+.menu .continar .holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.menu .continar .holder img {
+    max-width: 100%;
+    position: relative;
+}
+@media (max-width: 455px) {
+    .menu .continar .holder img {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+.menu .continar .holder .box-1 {
+    position: relative;
+}
+.menu .continar .holder .box-1::before {
+    content: "$50";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 15px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    z-index: 10;
+    border-radius: 2px;
+}
+.menu .continar .holder .box-1::after {
+    content: "Chocolate cake";
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transtion);
+}
+.menu .continar .holder .box-1:hover::after {
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    color: white;
+}
+.menu .continar .holder .box-2 {
+    position: relative;
+}
+.menu .continar .holder .box-2::before {
+    content: "$22";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 15px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    z-index: 10;
+    border-radius: 2px;
+}
+.menu .continar .holder .box-2::after {
+    content: "Klassy Pancake";
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transtion);
+}
+.menu .continar .holder .box-2:hover::after {
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    color: white;
+}
+.menu .continar .holder .box-3 {
+    position: relative;
+}
+.menu .continar .holder .box-3::before {
+    content: "$18";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 15px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    z-index: 10;
+    border-radius: 2px;
+}
+.menu .continar .holder .box-3::after {
+    content: "Tall Klassy Bread";
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transtion);
+}
+.menu .continar .holder .box-3:hover::after {
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    color: white;
+}
+.menu .continar .holder .box-4 {
+    position: relative;
+}
+.menu .continar .holder .box-4::before {
+    content: "$27";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 15px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    z-index: 10;
+    border-radius: 2px;
+}
+.menu .continar .holder .box-4::after {
+    content: "CheeseCake";
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transtion);
+}
+.menu .continar .holder .box-4:hover::after {
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    color: white;
+}
+.menu .continar .holder .box-5 {
+    position: relative;
+}
+.menu .continar .holder .box-5::before {
+    content: "$8.5";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 15px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    z-index: 10;
+    border-radius: 2px;
+}
+.menu .continar .holder .box-5::after {
+    content: "Klassy Cup Cake";
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transtion);
+}
+.menu .continar .holder .box-5:hover::after {
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    color: white;
+}
+/* End Menu */
+/* Start Chifs */
+.chifs {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+}
+.chifs .continar h5 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.chifs .continar h1 {
+    color: #2A2A2A;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+.chifs .continar .holder {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-gap: 30px;
+}
+.chifs .continar .holder .box {
+    padding: 5px 5px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    text-align: center;
+}
+.chifs .continar .holder .box .image {
+    position: relative;
+    overflow: hidden;
+}
+.chifs .continar .holder .box img {
+    max-width: 100%;
+    transition: var(--main-transtion);
+    overflow: hidden;
+}
+.chifs .continar .holder .box:hover img {
+    filter: blur(5px);
+}
+.chifs .continar .holder .box .info h3 {
+    color: #2A2A2A;
+    font-size: 19px;
+    transition: var(--main-transtion);
+}
+.chifs .continar .holder .box:hover h3 {
+    color: var(--main-color);
+}
+.chifs .continar .holder .box .info p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.chifs .continar .holder .box .image i {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: white;
+    font-size: 35px;
+    background-color: transparent;
+    z-index: -1;
+    transition: 0.6s;
+    cursor: pointer;
+    transition: var(--main-transtion);
+}
+.chifs .continar .holder .box .image i:hover {
+    color: var(--main-color);
+}
+.chifs .continar .holder .box:hover i {
+    z-index: 100;
+}
+.fa-google-plus-square {
+    padding-left: 40px;
+}
+.fa-facebook-square {
+    padding-left: 80px;
+}
+/* End Chifs */
+
+/* Start Contact */
+.contact {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+    background-image: url(../images/reservation-bg.jpg);
+    background-size: cover;
+}
+.contact .continar {
+    display: flex;
+    gap: 30px;
+}
+/* .contact .continar .box {
+    width: 50%;
+} */
+@media (min-width: 992px) {
+    .contact .continar .box {
+        width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .contact .continar {
+        flex-direction: column;
+    }
+}
+
+.contact .continar .text p {
+    color: white;
+    line-height: 1.6;
+}
+.contact .continar h5 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.contact .continar h1 {
+    color: white;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+.contact .continar p {
+    color: white;
+    line-height: 1.6;
+}
+.contact .continar .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.contact .continar .info .calls {
+    background-color: white;
+    width: fit-content;
+    padding: 3px 60px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 7px;
+    text-align: center;
+    color: #2A2A2A;
+}
+.contact .continar .info .calls .logo {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    top: -40px;
+    left: 36%;
+}
+.contact .continar .info .calls .logo i {
+    color: white;
+    padding-top: 25px;
+    font-size: 20px;
+}
+.contact .continar .info .calls h4 {
+    padding-top: 16px;
+    font-size: 19px;
+}
+.contact .continar .info .calls p {
+    font-size: 16px;
+}
+.contact .continar .info .calls p {
+    color: black;
+}
+.contact .continar .info .email {
+    background-color: white;
+    width: fit-content;
+    padding: 3px 60px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 7px;
+    text-align: center;
+    color: #2A2A2A;
+}
+.contact .continar .info .email .logo {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    top: -40px;
+    left: 36%;
+}
+.contact .continar .info .email .logo i {
+    color: white;
+    padding-top: 25px;
+    font-size: 20px;
+}
+.contact .continar .info .email h4 {
+    padding-top: 16px;
+    font-size: 19px;
+}
+.contact .continar .info .email p {
+    font-size: 16px;
+}
+.contact .continar .info .email p {
+    color: black;
+}
+.log-in {
+    background-color: white;
+    border-radius: 7px;
+    padding: 30px;
+}
+@media(max-width: 992px) {
+    .log-in {
+    margin: 0 auto;
+    }
+}
+.log-in h2 {
+    color: #2A2A2A;
+    font-size: 35px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.log-in .inputs {
+    display: flex;
+    flex-direction: column;
+}
+.log-in .inputs input {
+    padding: 15px;
+    display: block;
+    border:none;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: var(--main-transtion)
+}
+.log-in .inputs input:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+.log-in .inputs textarea {
+    margin-top: 40px;
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: var(--main-transtion);
+}
+.log-in .inputs textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+/* End Contact */
+
+/* Start Meals */
+.meals {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+}
+
+.meals .continar {
+    position: relative;
+}
+.meals .continar .head-text {
+    text-align: center;
+}
+.meals .continar .head-text h5 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.meals .continar .head-text h1 {
+    color: #2A2A2A;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+.meals .continar .time {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    margin-top: 20px;
+}
+.meals .continar .time .box {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+.meals .continar .time .box p {
+    font-weight: bold;
+    transition: var(--main-transtion);
+    cursor: pointer;
+}
+.meals .continar .time .box p:hover {
+    color: var(--main-color);
+} 
+.meals .continar .food {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+@media(max-width: 1200px) {
+    .meals .continar .food {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.meals .continar .food .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-top: 30px;
+    cursor: pointer;
+    padding: 20px;
+    transition: var(--main-transtion);
+    border-radius: 4px;
+}
+.meals .continar .food .box:hover {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+.meals .continar .food .box img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.meals .continar .food .box .info {
+    width: 60%;
+    margin-right: 100px;
+}
+.meals .continar .food .box .info h3 {
+    color: #2A2A2A;
+    font-size: 21px;
+
+}
+.meals .continar .food .box .info p {
+    color: #2A2A2A;
+    font-size: 16px;
+    line-height: 1.7;
+}
+@media (max-width: 767px) {
+    .meals .continar .food .box .info p {
+        display: none;
+    }
+}
+.meals .continar .food .item-1::after {
+    content: "$10.5";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.meals .continar .food .item-2::after {
+    content: "$5.5";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.meals .continar .food .item-3::after {
+    content: "$9.90";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.meals .continar .food .item-4::after {
+    content: "$13.5";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.meals .continar .food .item-5::after {
+    content: "$11.25";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+.meals .continar .food .item-6::after {
+    content: "$20";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+/* End Meals */
+
+/* Start Footer */
+.footer {
+    background-color: var(--main-color);
+    display: flex;
+    height: 100px;
+}
+.footer .continar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer .continar img {
+    display: flex;
+    align-items: center;
+}
+
+/* End Footer */
